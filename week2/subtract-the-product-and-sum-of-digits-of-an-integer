@@ -1,0 +1,15 @@
+class Solution(object):
+    def subtractProductAndSum(self, n):
+        x=int(n)
+        k=int(0)
+        product=int(1)
+        summ=int(0)
+        result=int(0)
+        while x>0:
+            k=x%10
+            x=x/10
+            product*=k
+            summ+=k
+        result=product-summ
+        return result
+        
