@@ -1,0 +1,16 @@
+class Solution(object):
+    def interpret(self, command):
+        x=str()
+        n=str()
+        for i in command:
+            if i == "G":
+                x+= "G"
+            else: 
+                n+=i
+            if n=="()":
+                x+="o"
+                n=""
+            elif n=="(al)":
+                x+="al"
+                n=""
+        return x
